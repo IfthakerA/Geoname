@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+
+table{
+    width:100%;
+}
+
+.middletr{
+    text-align: center;
+}
+tr{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.middletd{
+    text-align: center;
+}
