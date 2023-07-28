@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="ifty">
+		<link rel="stylesheet" href="./style.css">
+
+
+	</head>
+
+	<body>
+
+		<table>
+			<tr>
+				<th>Geoname</th>
+				<th>Look for country, weather and neighbours</th>
+			</tr>
+
+
+		
+		
+        	<tr class='middletr'>
+				<td>Country Code</td>
+				<td rowspan='3'>
+					<label for='lat'>LATITUDE-></label>
+					<input type="number" step='0.01' id='lat' name='lat'>
+					<label for='lng'>LONGITUDE-></label>
+					<input type="number" step="0.01" id='lng' name='lng'>
+
+					<br>
+					<br>
+
+					<button id='btnCode'>COUNTRY CODE</button>
+					
+				</td>
+				
+				
+				<tr class='middletr'>
+				<td>Weather</td>
+				<td>
+				<label for="north">North:</label>
+				<input type="number" step="0.01" id="north" name="north">
+				<label for="south">South:</label>
+				<input type="number" step="0.01" id="south" name="south">
+				<label for="east">East:</label>
+				<input type="number" step="0.01" id="east" name="east">
+				<label for="west">West:</label>
+				<input type="number" step="0.01" id="west" name="west"><br><br>
+				<button id="btnTemp">Weather</button>
+				</td>
+			</tr>
+
+			
+
+            
+            
+            <tr class='middletr'>
+				<td>
+					Neighbours
+				</td>
+				<td>
+					<input type="number" id="geonameid" value='3017382'>
+				</td>
+				<td>
+					<button id="btnNeigh">Submit</button>
+				</td>
+			</tr>
+			
+
+            
+            
+          
+		</table>
+
+		<br><br>
+
+		<div id="divResults">
+		    
+			
+			<table>
+
+				<tr>
+					<th><span id="txtCode">Country</span></th>
+				
+
+					<th><span id="txtTemp">Weather</span>
+					</th>
+					<td id="txtHumidity" class='middletd'>
+					</td>
+					<td id="txtCondition" class='middletd'>
+						
+					</td>
+	
+					<td class='middletd'>
+					    
+
+						<span id="txtN1">Neighbourhood: country name</span>
+						<span id="txtN2">Neighbourhood: population</span>
+						<span id="txtN3">Neighbourhood: timezone</span>
+					</td>
+
+				</tr>
+				
+				
+			
+				
+				
+					
+
+			</table>
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>

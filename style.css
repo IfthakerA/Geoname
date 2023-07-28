@@ -1,0 +1,26 @@
+
+
+tr{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+body{
+    background-color: orange;
+}
+
+
+table{
+    width:100%;
+}
+
+.middletr{
+    text-align: center;
+}
+
+
+.middletd{
+    text-align: center;
+    font-weight: bold;
+}
